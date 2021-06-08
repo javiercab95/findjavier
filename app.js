@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 
-
-app.listen(3000, () => {
-	console.log("listening")
+const port = process.env.port || 3000;
+app.listen(port, () => {
+	console.log("listening");
 });
